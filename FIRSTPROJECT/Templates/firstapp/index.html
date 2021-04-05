@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+    <head>
+        <title>FirstApp</title>
+         <script src = "{% static 'js/color1.js' %}"></script>
+         <link rel ="stylesheet" href = "{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1 id ="hello"> Hi! Welcome to the innovation with python training.</h1>
+            <h2>This is from template folder outside application folder. </h2>
+        </div>
+       
+            <img id = "image" src = "{% static 'image.jpeg' %}" alt="MyImage"/>
+        
+        
+       
+            <button class="buttons" data-color = "red">Red</button>
+            <button class="buttons" data-color = "blue">Blue</button>
+            <button class="buttons" data-color = "green">Green</button>
+
+        
+    </body>
+</html>
